@@ -1,0 +1,140 @@
+
+
+:root {
+    --main-color: #272b30;
+    --seconde-color: #32383e;
+    --color-text: #fff;
+    --btn-main-color: #272729;
+ }
+
+ body {
+    font-family: "Comfortaa", cursive;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: var(--main-color);
+    color: var(--color-text);
+ }
+ .badge-color {
+    background-color: var(--seconde-color);
+ }
+ 
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+    font-family: "Nerko One", cursive;
+    color: var(--color-text) !important;
+ }
+ 
+ a,
+ p,
+ span {
+    color: inherit !important;
+ }
+ ::-webkit-scrollbar {
+    width: 0.625rem;
+ }
+ 
+ ::-webkit-scrollbar-track {
+    background-color: var(--seconde-color);
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+ }
+
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+
+/********* Nav ************/
+
+.navbar .logo img{width: 38px;}
+.navbar .logo h1{font-size: 22px;}
+nav {
+    background-color: rgb(58, 73, 123) !important;
+    margin: auto;
+    margin-top: -30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+ }
+.navbar{
+    --bs-navbar-color:#bfc1c8;
+    --bs-navbar-padding-y:1rem;
+}
+.collapse ul li:hover a , .collapse ul li a.active{
+    color: #009ad8 !important;
+    transition: color 0.5s;
+}
+ .collapse ul li a {
+    padding: 5px !important;
+    transition: 0.3s ease;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/***** Main *******/
+main .card{
+filter: grayscale(0.7);
+transition: transform 0.5s, filter 0.5s 0.1s;
+}
+main .card:hover {
+transform: scale(1.05);
+filter: grayscale(0);
+}
+
+/*** Details ****/
+.details {
+    background-color: #272729be;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+ }
+ 
+/* Loading */
+.loading {
+   position: fixed;
+   z-index: 9999;
+   inset: 0;
+   background-color: #272b30e3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.loader {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   display: inline-block;
+   border-top: 4px solid #fff;
+   border-right: 4px solid transparent;
+   box-sizing: border-box;
+   animation: rotation 1s linear infinite;
+   position: relative;
+}
+.loader::after {
+   content: "";
+   box-sizing: border-box;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border-left: 4px solid #ff3d00;
+   border-bottom: 4px solid transparent;
+   animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}

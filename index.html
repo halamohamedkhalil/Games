@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <title>GAMES</title>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <section class="gamesContainer">
+                <!--Header-->
+                <header>
+                    <img src="images/wraper.png" class="w-100" alt="wraper"> 
+                </header>
+
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg nav-bg text-white rounded-4 col-lg-9 col-md-6" >
+                            <div class="container">                    
+                                <div class="logo">
+                                    <a href="#" class="text-decoration-none d-flex flex-row justify-content-between align-items-center gap-1" >
+                                        <img src="images/logo-sm.png" alt="logo">
+                                        <h1 class="mb-0 fw-normal">GAME REVIEWS</h1>                            
+                                    </a>
+                                </div>
+                                <button class="border border-0 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContainer" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa-regular fa-bars fa-lg "></i>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarContainer" class="text-white">
+                                <ul class="navbar-nav ms-auto d-flex align-items-center gap-1 justify-content-center">
+                                    <li class="nav-item">
+                                    <a class="nav-link position-relative active" aria-current="page" data-category="mmorpg" href="#mmorpg">MMORPG</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link position-relative" data-category="shooter" href="#hooter">SHOOTER</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link position-relative" data-category="sailing" href="#sailing">SAILING</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link position-relative" data-category="permadeath" href="#permadeath">PERMADEATH</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link position-relative" data-category="superhero" href="#superhero">SUPERHERO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link position-relative" data-category="pixel" href="#pixel">PIXEL</a>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                </nav>
+                    
+                <!-- Main DIV -->
+                <main class="container my-5 ">
+                    <div class="position-relative">
+                        <div class="row " id="games">
+                            
+                        </div>
+                    </div>
+                </main>
+            </section>
+
+
+        
+        <!-- Details -->
+        <section class="details d-none" >
+            <div class="container">
+                <header class="hstack justify-content-between">
+                    <h1 class="text-center h3 py-4">Details Game</h1>
+                    <button class="btn-close btn-close-white" id="btnclose"></button>
+                </header>
+                <div class="row g-4" id="detailsContent" >
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+      <div class="loading">
+          <div class="loader"></div>
+      </div>
+
+       
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js" type="module"></script>
+    </body>
+</html> 
