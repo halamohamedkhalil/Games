@@ -4,7 +4,7 @@ export class Game{
     }
     display(game){
         document.querySelector("#games").innerHTML += 
-        `<div class="col-md-1 col-lg-2 col-xl-3 mb-3 "  href="${game.game_url}" >
+        `<div class="col-md-3 col-lg-3 col-xl-3 mb-3 "  href="${game.game_url}" >
            <div class="card h-100 bg-transparent text-white ">
                  <div class="card-body gameContainer" data-id="${game.id}"  role="button" >
                     <div class="position-relative">
